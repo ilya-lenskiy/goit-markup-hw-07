@@ -1,0 +1,14 @@
+$font-size: (
+  'input': 12px,
+  'main': 14px,
+  'button': 16px,
+  'card': 18px,
+  'form-title': 20px,
+  'logo': 26px,
+  'section-title': 36px,
+  'hero': 44px,
+);
+
+@function getFont-size($key) {
+  @return map-get($font-size, $key);
+}

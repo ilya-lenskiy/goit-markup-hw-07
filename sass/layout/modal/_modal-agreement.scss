@@ -1,0 +1,54 @@
+.agreement {
+  position: relative;
+}
+.agreement__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.agreement__label {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7;
+  color: getColor('grey-text');
+  margin-left: 37px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/svg/checkbox.svg);
+    @include transitions(background-image background-color);
+  }
+  &:hover::before {
+    background-image: url(../images/svg/checkbox-focus.svg);
+  }
+  .agreement__checkbox:focus + &::before {
+    background-image: url(../images/svg/checkbox-focus.svg);
+  }
+  .agreement__checkbox:checked + &::before {
+    width: 16px;
+    height: 16px;
+    border-color: transparent;
+    background-color: getColor('button');
+    background-image: url(../images/svg/check-agreement.svg);
+    background-size: contain;
+    background-origin: border-box;
+    @include transitions(fill);
+  }
+}
+.agreement__link {
+  text-decoration-line: underline;
+  color: getColor('button');
+}
+.agreement__button {
+  @extend %button;
+  padding: 10px 32px;
+  margin-top: 30px;
+  margin-left: 125px;
+}

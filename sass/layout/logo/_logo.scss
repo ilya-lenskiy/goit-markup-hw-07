@@ -1,0 +1,16 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: getFont-size('logo');
+  line-height: 1.2;
+}
+.logo__header {
+  margin-right: 93px;
+}
+.logo__accent {
+  color: getColor('accent-text');
+}
+.logo__footer {
+  margin-right: 86px;
+  color: getColor('white-text');
+}

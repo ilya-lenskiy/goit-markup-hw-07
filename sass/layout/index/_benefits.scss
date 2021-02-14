@@ -1,0 +1,60 @@
+.benefit {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefit__title--hidden {
+  @include title-hidden;
+}
+.benefit__list {
+  display: flex;
+}
+.benefit__item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: getColor('bgc-secondary');
+    margin-bottom: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+  }
+}
+
+.antenna::before {
+  background-image: url(../images/svg/antenna.svg);
+  background-size: 70px;
+}
+.clock::before {
+  background-image: url(../images/svg/clock.svg);
+  background-size: 70px;
+}
+.diagram::before {
+  background-image: url(../images/svg/diagram.svg);
+  background-size: 70px;
+}
+.astronaut::before {
+  background-image: url(../images/svg/astronaut.svg);
+  background-size: 70px;
+}
+.benefit__name {
+  font-weight: 700;
+  font-size: getFont-size('main');
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.benefit__essence {
+  color: getColor('grey-text');
+  font-size: getFont-size('main');
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}

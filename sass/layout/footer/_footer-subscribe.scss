@@ -1,0 +1,44 @@
+.subscribe {
+  margin-left: 93px;
+}
+.subscribe__label {
+  font-weight: 700;
+  font-size: getFont-size('main');
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.subscribe__button-form {
+  margin-top: 15px;
+  display: flex;
+}
+.subscribe__input {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: getColor('bgc-dark-accent');
+  color: getColor('white-text');
+  font-size: getFont-size('main');
+  padding: 15px 16px;
+  width: 358px;
+  margin-right: 12px;
+  @include transitions(border-color);
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: getColor('button');
+  }
+}
+
+.subscribe__button {
+  @extend %button;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 0;
+  padding: 10px 28px 10px 29px;
+}
+.subscribe__icon {
+  margin-left: 10px;
+  fill: getColor('bgc-main');
+}

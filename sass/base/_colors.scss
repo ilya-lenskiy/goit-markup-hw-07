@@ -1,0 +1,20 @@
+$color: (
+  ///////////////////////// Text color
+  'black-text': #212121,
+  'grey-text': #757575,
+  'white-text': #ffffff,
+  'accent-text': #2196f3,
+  'footer-addressbox-text': rgba(255, 255, 255, 0.6),
+  ///////////////////////// Background color
+  'bgc-main': #ffffff,
+  'bgc-secondary': #f5f4fa,
+  'bgc-dark-accent': #2f303a,
+  ///////////////////////// Button color
+  'button': #2196f3,
+  ///////////////////////// SVG color
+  'icon': #afb1b8
+);
+
+@function getColor($key) {
+  @return map-get($color, $key);
+}

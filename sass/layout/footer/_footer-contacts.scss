@@ -1,0 +1,24 @@
+.footer {
+  background-color: getColor('bgc-dark-accent');
+  color: getColor('white-text');
+  font-size: getFont-size('main');
+  line-height: 1.7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__list {
+  margin-top: 20px;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  font-style: normal;
+}
+.addressbox {
+  color: getColor('footer-addressbox-text');
+}
